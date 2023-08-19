@@ -1,0 +1,157 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Poppins", sans-serif;
+  box-sizing: border-box;
+}
+
+body {
+  background: linear-gradient(rgba(63, 166, 255, 0.5), #7f7870);
+  background-size: cover;
+  background-position: center;
+  height: 100%;
+  overflow: auto;
+}
+
+.name {
+  display: flex;
+  width: 100%;
+  align-items: center;
+  justify-content: center;
+  font-size: 22px;
+  font-weight: 1000;
+  color: #7f7870;
+}
+
+.name:hover {
+  cursor: pointer;
+  color: #fff;
+}
+
+.box {
+  width: 90%;
+  max-width: 470px;
+  color: #fff;
+  background: linear-gradient(135deg, #52e5e7 10%, #130cb7 100%);
+  padding: 40px 35px;
+  margin: 100px auto 0;
+  box-shadow: 0px 0px 10px rgba(110, 109, 109, 0.336);
+  border-radius: 25px;
+  text-align: center;
+  display: block;
+}
+
+.searchbtn {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+}
+
+.searchbtn input {
+  border: none;
+  outline: 0;
+  background: #ebfffc;
+  color: #555;
+  border-radius: 30px;
+  height: 60px;
+  padding: 10px 25px;
+  font-size: 18px;
+  margin-right: 16px;
+  flex: 1;
+}
+
+.searchbtn button {
+  border: 0;
+  outline: 0;
+  background: #ebfffc;
+  cursor: pointer;
+  border-radius: 50%;
+  width: 60px;
+  height: 60px;
+  box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.2);
+}
+
+.searchbtn button img {
+  width: 16px;
+}
+
+.icon {
+  width: 170px;
+  margin-top: 30px;
+  filter: drop-shadow(0px 0px 5px rgba(0, 0, 0, 0.3));
+}
+
+.weather h2 {
+  text-transform: capitalize;
+  font-size: 45px;
+  font-weight: 400;
+  margin-top: -10px;
+}
+
+.info {
+  display: flex;
+  margin-top: 50px;
+  padding: 0 20px;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.col img {
+  width: 100px;
+  margin-right: 12px;
+  margin: 13px;
+}
+
+.humidity,
+.windy {
+  font-size: 28px;
+  margin-top: -6px;
+}
+
+.humidity,
+.pressure {
+  margin: -6px;
+}
+
+.pressure {
+  font-size: 28px;
+  margin-top: 0;
+}
+
+.temp span {
+  font-size: 30px;
+}
+
+.datetime {
+  position: absolute;
+  bottom: 36%;
+  right: 44%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  margin: -30px;
+}
+
+.datetime p {
+  margin-bottom: 5px;
+  color: rgb(255, 253, 253);
+  padding: 2px 5px;
+  margin: -15px -5px;
+}
+
+.error {
+  display: none;
+  background-color: peru;
+  border-radius: 15px;
+  padding: 7px 15px;
+  margin-top: 10px;
+}
+
+.error p {
+  color: rgb(228, 21, 21);
+  font-size: 12px;
+}
